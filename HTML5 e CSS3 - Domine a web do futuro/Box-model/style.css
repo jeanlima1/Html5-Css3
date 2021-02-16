@@ -1,0 +1,22 @@
+.box {
+    background-color: limegreen;
+    width: 250px
+}
+
+.box-with-padding {
+    background-color: Lightblue;
+    padding: 0 25px;
+    width: 250px;
+}
+
+.box2 {
+    background-color: limegreen;
+    width: 250px
+}
+
+.box-with-padding2 {
+    box-sizing: border-box;
+    background-color: Lightblue;
+    padding: 0 25px;
+    width: 250px;
+}
