@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- O seu HTML vem aqui! -->
+    <p class="tip">Você sabia que....</p>
+    <style>
+        p {
+            font-size: 40px;
+        }
+        .tip::before {
+            content: "\261E";
+            margin-right: 10px;
+        }
+    </style>
     <script src="jquery.min.js"></script>
   </body>
 </html>
