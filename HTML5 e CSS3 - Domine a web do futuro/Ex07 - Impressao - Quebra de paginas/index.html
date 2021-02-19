@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quebra de paginas</title>
+  <link rel="stylesheet" href="normalize.css">
+  <script src="prefixfree.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Controlando quebras de páginas</h1>
+  Enquanto no navegador o nosso conteúdo existe em apenas uma página, na
+  impressão existe a necessidade de se quebrar o conteúdo em páginas de acordo
+  com a configuração do usuário. Por padrão isso será feito de acordo com o tamanho da sua página, mas é possível tomar
+  controle sobre isso e definir regras específicas para informar em qual parte do seu conteúdo a quebra será feita.
+  Atualmente, existem 3 propriedades disponíveis na maioria dos navegadores para isso:
+  page-break-before, page-break-inside e page-break-after.
+  O page-break-before e page-break-after definem se a quebra de página deve ocorrer antes ou depois do elemento. A
+  propriedade aceita os valores
+  always, utilizado para forçar a quebra, ou avoid, indicando para o navegador
+  que a quebra deve ser evitada. Com eles é possível informar, por exemplo, que ao
+  imprimir uma relação de posts de um blog, deve existir uma quebra de página entre
+  um post e outro.
+  <pre>
+    <code>
+    article {
+    page-break-after: always;
+    }
+    </code>
+  </pre>
+    Ou caso você precise de um controle mais refinado das quebras, você pode definir um elemento vazio para posicionar as
+    quebras em pontos específicos do seu
+    conteúdo.
+    <pre>
+      <code>
+      .page-break {
+      display: none;
+      }
+      @media print {
+      </code>
+  </pre>
+  <script src="jquery.min.js"></script>
+</body>

@@ -11,3 +11,11 @@ h1 {
         text-shadow: none !important;
     }
 }
+
+  a {
+    text-decoration: underline !important;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
