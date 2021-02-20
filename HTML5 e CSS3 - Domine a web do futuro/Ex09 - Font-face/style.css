@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "IconicFill";
+    font-style: normal;
+    font-weight: 400;
+    src: local('IconicFill'), url(/fonts/iconic_fill.woff) format('woff');
+}
+
+h1 {
+    font-family: "Press Start 2P", cursivex;
+}
+
+.icon-next::after {
+    content: '\2192';
+    font-family: 'IconicFill';
+    margin-left: 10px;
+}
+
+h2.icon-next {
+    color: blue;
+}
+
+h3 {
+    font-family: "Lobster", cursive;
+}
