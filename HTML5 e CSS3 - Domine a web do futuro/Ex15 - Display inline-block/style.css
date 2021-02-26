@@ -1,0 +1,8 @@
+p {
+    background-color: limegreen;
+}
+
+span {
+    background-color: lightblue;
+    display: inline-block;
+}
