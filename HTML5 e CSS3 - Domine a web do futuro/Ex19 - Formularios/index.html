@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template</title>
+  <link rel="stylesheet" href="normalize.css">
+  <script src="prefixfree.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form method="post" action="">
+    <p>
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="email">
+      <span class='hint'>por exemplo, seunome@dominio.com.</span>
+    </p>
+    <p>
+      <label for="subject">Assunto:</label>
+      <input type="text" name="" id="subject">
+      <span class='hint'>Nos diga qual é o seu problema ou ideia.</span>
+    </p>
+    <p>
+      <label for="content">Mensagem:</label>
+      <textarea name="" id="content"></textarea>
+      <span class='hint'>
+        Escreva a sua mensagem, em até 500 caracteres.
+      </span>
+    </p>
+    <button>Enviar Mensagem:</button>
+  </form>
+
+  <style>
+    label {
+      display: inline-block;
+      font-size: 0.9em;
+      font-weight: bold;
+      width: 90px;
+    }
+
+    input,
+    textarea {
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-shadow: inset 2px 2px 2px #eee;
+      display: inline-block;
+      font-size: 0.9;
+      padding: 2px 5x;
+      width: 200px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+      .hint {
+        background-color: #FFFBE4;
+        border-radius: 3px;
+        border: 1px solid #CCC;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        font-size: 0.8em;
+        margin-left: 20px;
+        padding: 3px;
+      }
+
+      .hint {
+        display: none;
+      }
+
+      input:focus + .hint, textarea:focus + .hint {
+        display: inline-block;
+      }
+  </style>
+  <script src="jquery.min.js"></script>
+</body>
